@@ -5,186 +5,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <style>
-        @keyframes pulse {
-            0% {
-                scale: 1;
-            }
-
-            60% {
-                scale: 1.2
-            }
-
-            90% {
-                scale: 1;
-            }
-        }
-    </style>
-
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 
-<body style="background-color: white; margin: 0;padding: 0; box-sizing: border-box;">
+<body>
 
-    <div
-        style=" margin: 0;padding: 0; box-sizing: border-box; font-family: Arial, Helvetica, sans-serif; background-color: white; width: 100%; padding: .5rem 1rem;">
-        <header style="background-color: #f3f3f3;">
-            <table style="width: 100%;">
-                <tr>
-                    <th style="width: 50%;">
-                        <div style="font-weight: bold; font-size: 2rem;"><img width="60px"
-                                src="https://cdn3.iconfinder.com/data/icons/social-media-2068/64/_shopping-512.png"
-                                alt="">
-                        </div>
-                    </th>
-                    <th>
-                        <h2 style="text-align: left;"> Ecommerce</h2>
-                    </th>
-                </tr>
-            </table>
-            <div>
+    <section class="section">
+        <header>
+            <div class="logo">
+                <img src="https://icons-for-free.com/iconfiles/png/512/buy+ecommerce+logo+price+sale+shop+shopping+icon-1320183862496435117.png"
+                    alt="">
             </div>
+            <h3>
+                Ecommerce
+            </h3>
         </header>
-        <hr>
 
-        <div>
-            <h3 style="text-align: center;font-size: 1.5rem; font-weight: 800; color: #4242e4;">Congratulations!</h3>
-            <h3 style="text-align: center; margin-top: -1rem;">Narayan</h3>
-
-            <h1
-                style="text-align: center; animation: pulse 1s ease infinite; color: #4242e4;width: 50px; height: 50px;border: 2px solid #4242e4;border-radius: 50%;margin: auto;">
-                ✓</h1>
-            <p style="text-align: center;">Your Order Has Been <br> Place Successful</p>
-            <h6 style="text-align: center; font-size: 14px; margin-top: -10px;">Order No: order_123hF_2dh</h6>
+        <div class="content">
+            <div class="icon">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <h2>Thank You!</h2>
+            <h1>Narayan</h1>
+            <h6>Your order has been placed successfully!</h6>
+            <p>Order No:Us343jdsj342</p>
+            <button>Order More</button>
         </div>
 
-        <div>
-            <h3 style="color: #4242e4; text-align:center;background-color: #f3f3f3;">Your Order Details</h3>
+        <div class="order-details">
+            <h4>Your Order Details</h4>
 
-            <table style="width: 100%;">
-                <tr>
-                    <th style="width: 30%;">
-                        <img style="width: 100%;"
-                            src="https://cdn.shopify.com/s/files/1/0428/3763/9317/products/nike-revolution4-blacklace_1_600x600_crop_center.png?v=1598256659"
-                            alt="product image">
-                    </th>
-                    <th style="width: 70%; padding: 10px;">
-                        <h3 style=" text-align: start ; font-size:14px; margin-bottom: -10px;">Nike Black Shoe (Light
-                            Weight)</h3>
-                        <p style="font-weight: lighter; text-align: justify; font-size: 10px;">Lorem, ipsum dolor sit
-                            amet consectetur Lorem ipsum dolor sit amet. amtesut
-                            adipisicing elit. Provident, odit!</p>
-                        <table style="width: 100%;">
-                            <tr>
-                                <th style=" width: 50%; text-align: start; font-weight: 400; font-size: 10px;">QTY - 1
-                                </th>
-                                <th style=" width: 50%; text-align: end; font-weight: 400; font-size: 10px;"> <span
-                                        style=" background-color: #4242e4; color: white; padding:3px  5px;">Price -
-                                        ₹599</span> </th>
-                            </tr>
+            <div class="container">
+                <div class="box">
+                    <div class="image-box">
+                        <img src="https://cdn.shopify.com/s/files/1/0428/3763/9317/products/nike-revolution4-blacklace_1_600x600_crop_center.png?v=1598256659"
+                            alt="">
+                    </div>
+                    <div class="order-info">
+                        <h4 class="product-title">Black shoe nike (Light Weight)</h4>
+                        <p class="product-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore,
+                            dignissimos.</p>
+                        <div class="info-footer"><span class="qty">Quantity - 2</span>
+                            <span class="price">₹1299</span>
+                        </div>
+                    </div>
 
-                        </table>
-                    </th>
-                </tr>
-                <tr>
-                    <th style="width: 30%;">
-                        <img style="width: 100%;"
-                            src="https://cdn.shopify.com/s/files/1/0428/3763/9317/products/nike-revolution4-blacklace_1_600x600_crop_center.png?v=1598256659"
-                            alt="product image">
-                    </th>
-                    <th style="width: 70%; padding: 10px;">
-                        <h3 style=" text-align: start ; font-size:14px; margin-bottom: -10px;">Nike Black Shoe (Light
-                            Weight)</h3>
-                        <p style="font-weight: lighter; text-align: justify; font-size: 10px;">Lorem, ipsum dolor sit
-                            amet consectetur Lorem ipsum dolor sit amet. amtesut
-                            adipisicing elit. Provident, odit!</p>
-                        <table style="width: 100%;">
-                            <tr>
-                                <th style=" width: 50%; text-align: start; font-weight: 400; font-size: 10px;">QTY - 1
-                                </th>
-                                <th style=" width: 50%; text-align: end; font-weight: 400; font-size: 10px;"> <span
-                                        style=" background-color: #4242e4; color: white; padding:3px  5px;">Price -
-                                        ₹599</span> </th>
-                            </tr>
-
-                        </table>
-                    </th>
-                </tr>
-                <tr>
-                    <th style="width: 30%;">
-                        <img style="width: 100%;"
-                            src="https://cdn.shopify.com/s/files/1/0428/3763/9317/products/nike-revolution4-blacklace_1_600x600_crop_center.png?v=1598256659"
-                            alt="product image">
-                    </th>
-                    <th style="width: 70%; padding: 10px;">
-                        <h3 style=" text-align: start ; font-size:14px; margin-bottom: -10px;">Nike Black Shoe (Light
-                            Weight)</h3>
-                        <p style="font-weight: lighter; text-align: justify; font-size: 10px;">Lorem, ipsum dolor sit
-                            amet consectetur Lorem ipsum dolor sit amet. amtesut
-                            adipisicing elit. Provident, odit!</p>
-                        <table style="width: 100%;">
-                            <tr>
-                                <th style=" width: 50%; text-align: start; font-weight: 400; font-size: 10px;">QTY - 1
-                                </th>
-                                <th style=" width: 50%; text-align: end; font-weight: 400; font-size: 10px;"> <span
-                                        style=" background-color: #4242e4; color: white; padding:3px  5px;">Price -
-                                        ₹599</span> </th>
-                            </tr>
-
-                        </table>
-                    </th>
-                </tr>
-
-            </table>
+                </div>
+                <!-- <hr> -->
+                <div class="box">
+                    <div class="image-box">
+                        <img src="https://5.imimg.com/data5/MT/MB/EO/SELLER-14290347/men-555-black-fashion-lace-up-shoes-500x500.jpg"
+                            alt="">
+                    </div>
+                    <div class="order-info">
+                        <h4 class="product-title">Black shoe nike (Light Weight)</h4>
+                        <p class="product-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore,
+                            dignissimos.</p>
+                        <div class="info-footer"><span class="qty">Quantity - 2</span>
+                            <span class="price">₹1299</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
 
-        <div style=" width: 80%; margin: auto;">
+        <div class="order-summary">
             <h4>Order Summary</h4>
-            <table style="background-color: #f3f3f3; width: 100%;padding: 10px; border-radius: 20px; ">
-                <tr style="font-size:12px; height: 25px;">
-                    <td style="width: 50%; text-align: start;">Sub Total</td>
-                    <td style="width: 50%; text-align: end;"> ₹1599</td>
-                </tr>
-                <tr style="font-size:12px; height: 25px;">
-                    <td style="width: 50%; text-align: start;">Tax</td>
-                    <td style="width: 50%; text-align: end;"> ₹99</td>
-                </tr>
-                <tr style="font-size:12px; height: 25px;">
-                    <td style="width: 50%; text-align: start;">Shipping</td>
-                    <td style="width: 50%; text-align: end;"> ₹49</td>
-                </tr>
-                <tr style="font-size:12px; height: 25px;">
-                    <td style="width: 50%; text-align: start;">Total</td>
-                    <td style="width: 50%; text-align: end;"> ₹1999</td>
-                </tr>
-            </table>
+            <div class="summary-flex">
+                <p>Sub Total</p>
+                <p>₹1299</p>
+            </div>
+            <div class="summary-flex">
+                <p>Tax</p>
+                <p>₹99</p>
+            </div>
+            <div class="summary-flex">
+                <p>Shipping</p>
+                <p>₹49</p>
+            </div>
+            <div class="summary-flex">
+                <p>Total</p>
+                <p>₹1500</p>
+            </div>
+        </div>
+
+        <div class="address">
+            <div class="add">
+                <h4>Delivery Address</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, iste?</p>
+            </div>
+            <div class="date">
+                <h4>Estimated Delivery </h4>
+                <p>2 June 2023</p>
+            </div>
+
         </div>
 
 
-        <div style="margin-top: 20px;">
-            <table>
-                <tr>
-                    <th style="text-align: start;">
-                        <!-- <h4 style="text-align: start;">Delivery Address</h4> -->
-                        Delivery Address
-                    </th>
-                </tr>
-                <tr>
-                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, possimus adipisci! In velit
-                        officiis culpa.</td>
-                </tr>
-            </table>
-        </div>
+        <h4 class="keep-buying">Be New , Keep Buying</h4>
 
-        <h2 style="color: #4242e4; text-align: center;">Be New , Keep Buying</h2>
+        <footer>
+            <div class="social">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate beatae quae alias aut eum, repudiandae
+                unde dolore, officia eaque aliquid voluptatibus debitis culpa asperiores veniam et ducimus, itaque a!
+                Eaque.</p>
+        </footer>
 
-        <div style="text-align: justify; padding: 14px; background-color: #4242e4;">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, corporis eum! Sit enim exercitationem illum
-            nihil quasi ad esse. Asperiores!
-        </div>
+    </section>
 
-    </div>
 
 </body>
 
